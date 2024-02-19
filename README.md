@@ -1,10 +1,10 @@
 
-# Setup Docker Para Projetos Laravel (8, 9 ou 10)
+# Projeto em laravel 10 
 
 ### Passo a passo
 Clone Repositório
 ```sh
-git clone https://github.com/MarcondesJrVAT/docker-php-mysql-redis
+git clone https://github.com/MarcondesJrVAT/ProjectOne
 ```
 
 Clone os Arquivos do Laravel
@@ -15,7 +15,7 @@ git clone https://github.com/laravel/laravel.git app-laravel
 
 Copie os arquivos docker-compose.yml, Dockerfile e o diretório docker/ para o seu projeto
 ```sh
-cp -rf docker-php-mysql-redis/* app-laravel/
+cp -rf ProjectOne/* app-laravel/
 ```
 ```sh
 cd app-laravel/
