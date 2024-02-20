@@ -2,27 +2,38 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
+use App\Models\Roles;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 
-class UserController extends Controller
+class RoleController extends Controller
 {
+
     public function index()
     {
-        return Inertia::render('Users/Index', ['users' => User::all()]);
+        return Inertia::render('Roles/Index');
     }
 
+
+    /**
+     * Show the form for creating a new resource.
+     */
     public function create()
     {
-        return Inertia::render('Users/Create');
+        //
     }
 
+    /**
+     * Store a newly created resource in storage.
+     */
     public function store(Request $request)
     {
         //
     }
 
+    /**
+     * Display the specified resource.
+     */
     public function show(string $id)
     {
         //

@@ -12,7 +12,7 @@ export default {
     data() {
         return {
             nodes: [
-                { id: 1, name: "Denny Curtis", title: "CEO", img: "https://cdn.balkan.app/shared/2.jpg" },
+                { id: 1, name: "Denny Curtis", title: "CEO", img: "https://cdn.balkan.app/shared/anim/1.gif" },
                 { id: 2, pid: 1, name: "Ashley Barnett", title: "Sales Manager", img: "https://cdn.balkan.app/shared/3.jpg" },
                 { id: 3, pid: 1, name: "Caden Ellison", title: "Dev Manager", img: "https://cdn.balkan.app/shared/4.jpg" },
                 { id: 4, pid: 2, name: "Elliot Patel", title: "Sales", img: "https://cdn.balkan.app/shared/5.jpg" },
@@ -33,7 +33,7 @@ export default {
                     }
                 },
                 miniMap: true,
-                mode: "rony",
+                mode: "dark",
                 nodes: x,
                 nodeBinding: {
                     field_0: "name",
@@ -44,7 +44,6 @@ export default {
                 template: "polina",
                 toolbar: {
                     layout: true,
-                    darkMode: true,
                     zoom: true,
                     fit: true,
                 }

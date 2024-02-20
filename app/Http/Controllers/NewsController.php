@@ -2,27 +2,45 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 
-class UserController extends Controller
+class NewsController extends Controller
 {
     public function index()
     {
-        return Inertia::render('Users/Index', ['users' => User::all()]);
+        return Inertia::render('News/Index');
     }
 
+    public function categoryNews()
+    {
+        return Inertia::render('News/Category');
+    }
+
+    public function singlePageApp()
+    {
+        return Inertia::render('News/SinglePage');
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
     public function create()
     {
-        return Inertia::render('Users/Create');
+        //
     }
 
+    /**
+     * Store a newly created resource in storage.
+     */
     public function store(Request $request)
     {
         //
     }
 
+    /**
+     * Display the specified resource.
+     */
     public function show(string $id)
     {
         //

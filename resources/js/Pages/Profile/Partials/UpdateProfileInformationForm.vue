@@ -94,13 +94,13 @@ const form = useForm({
                 <Transition
                     enter-from-class="opacity-0"
                     leave-to-class="opacity-0"
-                    class="transition ease-in-out"
+                    class="transition ease-in-out border-green-300 border-2 rounded-md p-2"
                 >
                     <p
                         v-if="form.recentlySuccessful"
                         class="text-sm text-gray-600 dark:text-gray-400"
                     >
-                        Atualização concluída com Sucesso.
+                        Atualização Realizada com Sucesso.
                     </p>
                 </Transition>
             </div>
